@@ -6,6 +6,10 @@ h1, h2, h3, h4 {
     margin: 0px;
 }
 
+a{
+    margin-top: 15px;
+}
+
 mat-divider{
     margin: 10px 0px 10px 0px;
 }
@@ -13,7 +17,7 @@ mat-divider{
 #work-wrapper{
     width: 75%;
     margin: auto;
-    padding-top: 90px;
+    padding-top: 100px;
 }
 
 .tile{
@@ -33,9 +37,6 @@ mat-divider{
     margin-bottom: 10px;
 }
 
-a{
-    margin-top: 15px;
-}
 
 @media screen and (max-width: 1000px){
    .tile-img{

@@ -1,6 +1,8 @@
 mat-toolbar{
     justify-content: center;
     position: fixed;
+    height: 64px;
+    z-index: 1;
 }
 
 img{
@@ -32,3 +34,24 @@ img{
     background-color: white;
 }
 
+#smNav{
+    display: none;
+    position: absolute;
+    left: 80px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 600px){
+    #smNav{
+        display: block;
+    }
+
+    #exNav{
+        display: none;
+    }
+
+    #homeBtn{
+        position: absolute;
+        left: 40px;
+    }
+}

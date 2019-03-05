@@ -21,7 +21,12 @@
         <a *ngIf=wTile.link
           mat-flat-button color="primary" 
           href = "{{wTile.link}}" 
-          target = _blank>{{wTile.linkText}}</a>
+          target = _blank
+          class="workLink"
+          >
+          {{wTile.linkText}}
+        </a>
+
       </div>
     </div>
   </section>
