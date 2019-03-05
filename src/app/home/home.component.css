@@ -1,0 +1,28 @@
+h1{
+    display: table;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+#homewrap{
+    max-width: 1000px;
+    width: 70%;
+    margin: 40px auto 0px auto;
+}
+
+#links{
+    width: 50%;
+    /* display: inline-block; */
+    float: left;
+}
+
+#info{
+    width: 50%;
+    margin-top: 41.5px;
+    display: inline-block;
+}
+
+#imgwrap{
+    text-align: center;
+    margin: 0px auto 20px auto;
+}

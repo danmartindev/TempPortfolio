@@ -1,0 +1,47 @@
+section{
+    margin-bottom: 60px;
+}
+
+h1, h2, h3, h4 {
+    margin: 0px;
+}
+
+mat-divider{
+    margin: 10px 0px 10px 0px;
+}
+
+#work-wrapper{
+    width: 75%;
+    margin: auto;
+    padding-top: 90px;
+}
+
+.tile{
+    padding: 30px 15px 40px 15px; 
+}
+
+.tile-content {
+    width: 60%;
+}
+
+.tile-img{
+    width: 30%;
+    float: right;
+}
+
+.skillsHead{
+    margin-bottom: 10px;
+}
+
+a{
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 1000px){
+   .tile-img{
+       display: none;
+   }
+   .tile-content{
+       width: 100%;
+   }     
+}

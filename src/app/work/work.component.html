@@ -1,0 +1,47 @@
+<div id="work-wrapper">
+  <h2>Professional Experience</h2>
+  <mat-divider></mat-divider>
+  <section id="experience-sec"> 
+    <div class="tile" *ngFor="let wTile of workTiles">
+      <img class="tile-img"src="{{wTile.image}}">
+      <div class="tile-content">
+        <h3>{{wTile.title}}</h3>
+        <h4>{{wTile.subTitle}}</h4>
+        <p>{{wTile.text}}</p>
+
+        <h4 class="skillsHead">Skills Used</h4>
+        <mat-chip-list class="chipList">
+          <mat-chip 
+              *ngFor="let chip of wTile.chips" 
+              >
+                {{chip}}
+          </mat-chip>
+        </mat-chip-list>
+
+        <a *ngIf=wTile.link
+          mat-flat-button color="primary" 
+          href = "{{wTile.link}}" 
+          target = _blank>{{wTile.linkText}}</a>
+      </div>
+    </div>
+  </section>
+  <!--<h2>Projects</h2>
+  <mat-divider></mat-divider>
+   <section id="project-sec"> 
+      <div class="tile" *ngFor="let pTile of projTiles">
+        <img class="tile-img"src="{{pTile.image}}">
+        <div class="tile-content">
+          <h3>{{pTile.title}}</h3>
+          <h4>{{pTile.subTitle}}</h4>
+          <p>{{pTile.text}}</p>
+          <mat-chip-list >
+            <mat-chip 
+                *ngFor="let chip of pTile.chips" 
+                >
+                  {{chip}}
+            </mat-chip>
+          </mat-chip-list>
+        </div>
+      </div>
+  </section> -->
+</div>

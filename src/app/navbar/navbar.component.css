@@ -1,0 +1,34 @@
+mat-toolbar{
+    justify-content: center;
+    position: fixed;
+}
+
+img{
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+
+/* span{
+    font-size: 40px;
+    font-weight: 500;
+} */
+
+.mat-button {
+    border-radius: 0px;
+    font-size: 16px;
+}
+
+.active {
+    border-bottom: 2px solid #ffb300;
+}
+
+.blue{
+    color:#0288d1;
+}
+
+#nameBar{
+    padding-top: 10px;
+    background-color: white;
+}
+

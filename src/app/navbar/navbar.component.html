@@ -1,0 +1,10 @@
+<!-- <mat-toolbar id="nameBar">
+    <span>Daniel <span class="blue">Martin</span></span>
+</mat-toolbar> -->
+<mat-toolbar color="primary">
+    <!-- <button mat-button routerLink="/">Home</button> -->
+    <span><img src="../../assets/HomeIconV1.png" alt="Icon"></span>
+    <button mat-button routerLink="/work" routerLinkActive="active">Work</button>
+    <button mat-button routerLink="/about" routerLinkActive="active">About</button>
+    <button mat-button (click)="openResume()">Resume</button>
+</mat-toolbar>
