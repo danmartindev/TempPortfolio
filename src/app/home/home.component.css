@@ -1,28 +1,52 @@
-h1{
-    display: table;
-    font-size: 50px;
-    cursor: pointer;
+section{
+    margin-bottom: 60px;
+}
+
+.list-wrap{
+    float: left;
+    width: 45%;
+    padding: 0px 10px 10px 10px;
 }
 
 #homewrap{
     max-width: 1000px;
     width: 70%;
-    margin: 40px auto 0px auto;
+    margin: 0px auto 0px auto;
+    padding-top: 100px;
 }
 
-#links{
-    width: 50%;
-    /* display: inline-block; */
-    float: left;
-}
-
-#info{
-    width: 50%;
-    margin-top: 41.5px;
-    display: inline-block;
-}
-
-#imgwrap{
+#welcome-sec{
     text-align: center;
-    margin: 0px auto 20px auto;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+#skills-sec{
+    overflow: hidden;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1200px){
+    #work-img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .list-wrap{
+        width: 100%;
+        padding: 0px 10px 10px 10px;
+    }
+
+    #welcome{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 900px){    
+    #homewrap{
+        width: 90%;
+        padding: 100px 10px 20px 10px;
+    }
 }

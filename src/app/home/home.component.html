@@ -1,23 +1,18 @@
 <div id = "homewrap">
-  <section id="links">
-    <h1
-      *ngFor = 'let link of links'
-      (mouseenter) = "showInfo(link.id)"
-      (mouseleave) = "linkHover(link.id)"
-      [@hoverSlide]="link.isHovered ? 'hovered' : '*'"
-      routerLink = '{{link.linkTo}}'>
-      {{link.title}}
-    </h1>
+  <section id="welcome-sec">
+    <span>Welcome to my portfolio! Please, take a look around and let me know what you think!</span>
   </section>
-  <section 
-    id = "info" 
-  >
-    <div id = "imgwrap">
-      <img src="../assets/CroppedMug500.png" alt="Me!" height="250" width="250" *ngIf="activeInfo == 0">
+  <section id="work-sec">
+      <h2>My Recent Work:</h2>
+      <img src="../../assets/AHFC.png" alt="AHFC Community Page" id="work-img">
+  </section>
+  <section id="skills-sec">
+    <h2>Some things that I work with:</h2>
+    <div *ngFor="let cat of categories" class="list-wrap">
+      <h3>{{cat.title}}</h3>
+      <mat-chip-list>
+        <mat-chip *ngFor="let skill of cat.skills" [disableRipple]="true" [selectable]="false">{{skill}}</mat-chip>
+      </mat-chip-list>
     </div>
-    <div id="infoContent" [innerHTML]="infoText"></div>
   </section>
 </div>
-
-
-

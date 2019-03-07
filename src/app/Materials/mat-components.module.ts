@@ -8,6 +8,7 @@ import {MatChipsModule} from '@angular/material/chips';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatGridListModule } from '@angular/material/grid-list';
 import {MatIconModule} from '@angular/material/icon';
+import {MatListModule} from '@angular/material/list';
 import {MatMenuModule} from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 
@@ -22,6 +23,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
     MatDividerModule,
     MatGridListModule,
     MatIconModule,
+    MatListModule,
     MatMenuModule,
     MatToolbarModule,
   ]

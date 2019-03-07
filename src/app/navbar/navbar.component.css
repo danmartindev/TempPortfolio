@@ -11,10 +11,10 @@ img{
     right: 10px;
 }
 
-/* span{
-    font-size: 40px;
-    font-weight: 500;
-} */
+span:focus{
+    outline: none;
+    border: 0;
+}
 
 .mat-button {
     border-radius: 0px;

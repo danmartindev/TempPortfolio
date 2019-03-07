@@ -14,10 +14,10 @@ import { FooterComponent } from './footer/footer.component';
 
 const appRoutes: Routes = [
   { path: 'about', component: AboutComponent},
-  // { path: 'home', component: HomeComponent},
+  { path: 'home', component: HomeComponent},
   { path: 'work', component: WorkComponent},
   { path: '',
-    redirectTo: '/work',
+    redirectTo: '/home',
     pathMatch: 'full'
   },
   { path: '**', component: PageNotFoundComponent },
