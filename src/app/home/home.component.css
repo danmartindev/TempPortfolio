@@ -8,6 +8,11 @@ section{
     padding: 0px 10px 10px 10px;
 }
 
+a{
+    text-decoration: none;
+    color: #0288d1;
+}
+
 #homewrap{
     max-width: 1000px;
     width: 70%;
@@ -24,6 +29,7 @@ section{
 
 #skills-sec{
     overflow: hidden;
+    padding-bottom: 30px;
 }
 
 /* MEDIA QUERIES */

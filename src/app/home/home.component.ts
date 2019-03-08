@@ -18,7 +18,7 @@ export class HomeComponent {
 
   categories = [
     {title:'Languages', skills:['JavaScript', 'CSS', 'HTML', 'PHP', 'Swift', 'TypeScript', 'C#', 'Java', 'SASS']},
-    {title:'Tools + Environments', skills:['jQuery', 'Angular', 'Wordpress', 'MySQL', 'Node', 'Bootstrap','Git', 'XCode', 'Unity', 'AJAX', 'REST APIs', 'JSON']},
+    {title:'Tools + Environments', skills:['jQuery', 'Angular', 'Wordpress', 'MySQL', 'Node', 'Bootstrap','Git', 'XCode', 'Unity', 'AJAX', 'REST APIs', 'JSON', 'Firebase']},
     {title:'Other Skills', skills:['Photoshop', 'Adobe Illustrator', 'Web Design', 'Game Design']},
   ]
 

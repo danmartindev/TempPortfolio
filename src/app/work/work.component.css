@@ -37,7 +37,7 @@ mat-divider{
     margin-bottom: 10px;
 }
 
-
+/* MEDIA QUERIES */
 @media screen and (max-width: 1000px){
    .tile-img{
        display: none;

@@ -40,6 +40,10 @@ span:focus{
     left: 80px;
 }
 
+#homeBtn{
+    cursor: pointer;
+}
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 600px){
     #smNav{

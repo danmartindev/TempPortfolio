@@ -1,8 +1,13 @@
-footer{
-    margin-top: -50px;
-    height: 50px;
+#myfoot{
+    text-align: center;
+    padding-bottom: 30px;
 }
 
-span {
+span, i {
     margin: 0px 15px 0px 15px;
+    color: #939393;
+}
+
+i {
+    cursor: pointer; 
 }
