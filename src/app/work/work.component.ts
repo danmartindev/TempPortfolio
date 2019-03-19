@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { fadeIn, fadeList } from '../animations';
 
 export interface workTile {
   title: string;
@@ -13,7 +14,11 @@ export interface workTile {
 @Component({
   selector: 'work',
   templateUrl: './work.component.html',
-  styleUrls: ['./work.component.css']
+  styleUrls: ['./work.component.css'],
+  animations: [
+    fadeIn,
+    fadeList
+  ]
 })
 export class WorkComponent implements OnInit {
 
@@ -48,10 +53,13 @@ export class WorkComponent implements OnInit {
   ];
 
   projTiles: workTile[] = [
-    {title: "African Heritage Food Co-op", subTitle:"Wordpress Development", 
-    chips: ['Wordpress', 'PHP', 'HTML', 'CSS', 'JavaScript'], image:"../assets/AHFC.png",
-      text: `Worked as a freelance web developer with a partner to design and develop a Wordpress site for a Buffalo based non-profit. 
-            Most of my time was spent working on the community portion of the site.`
+    {title: "Social Media Stopwatch", subTitle:"Chrome Exstension", link: "https://github.com/danmartindev/SocialStopwatch", linkText: "The code",
+    chips: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Chrome APIs'], image:"../assets/soc_stop128.png",
+      text: `This is a Google Chrome extension that I developed for a friend. It utilizes the Chrome alarms and tabs 
+      APIs to set timers(alarms) based on your open tabs, to help you better manage your time usage of social 
+      media and other distracting sites. Timers are currently set manually with the user choosing the tab by URL 
+      and setting the how long they want to have on the site, while future builds will have a setting to have them 
+      automatically created based on the url of the tab. You can check out the current build with the link below.`
     },
   ];
 
