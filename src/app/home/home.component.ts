@@ -1,4 +1,4 @@
-import { hoverSlide, fadeUp, fadeOut, colorTest } from './../animations';
+import { hoverSlide, fadeUp, fadeOut, colorTest, fadeIn } from './../animations';
 import { Component } from '@angular/core';
 
 @Component({
@@ -9,7 +9,8 @@ import { Component } from '@angular/core';
     hoverSlide,
     fadeUp,
     fadeOut,
-    colorTest
+    colorTest,
+    fadeIn
   ]
 })
 
