@@ -15,6 +15,7 @@ mat-divider{
 }
 
 #work-wrapper{
+    max-width: 1000px;
     width: 75%;
     margin: auto;
     padding-top: 100px;
@@ -22,6 +23,8 @@ mat-divider{
 
 .tile{
     padding: 30px 15px 40px 15px; 
+    /* display: flex;
+    align-items: center; */
 }
 
 .tile-content {
@@ -29,7 +32,7 @@ mat-divider{
 }
 
 .tile-img{
-    width: 30%;
+    max-width: 300px;
     float: right;
 }
 
