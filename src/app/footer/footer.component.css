@@ -10,4 +10,12 @@ span, i {
 
 i {
     cursor: pointer; 
+    -webkit-transition: color .3s; /* Safari */
+    transition: color .3s;
+    transition-timing-function: ease-in-out;
+
+}
+
+i:hover {
+    color: #0288d1;
 }
