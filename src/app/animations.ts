@@ -1,4 +1,4 @@
-import { trigger, state, transition, style, animate } from '@angular/animations';
+import { trigger, state, transition, style, animate, query, stagger } from '@angular/animations';
 
 export let fadeUp =  
   trigger('fadeInUp', [
@@ -34,4 +34,22 @@ export let hoverSlide =  trigger('hoverSlide', [
   transition('* <=> hovered', [
     animate('100ms ease-out')
   ]),
+])
+
+export let fadeIn =  trigger('fadeIn', [
+  transition('void => *', [
+    style({ transform: 'translateY(-3px)', opacity: 0}),
+    animate('600ms ease-in')
+  ]),
+])
+
+export let fadeList = trigger('listAnimation', [
+  transition('* => *', [ // each time the binding value changes
+    query(':enter', [
+      style({ opacity: 0, transform: 'translateY(-3px)' }),
+      stagger(100, [
+        animate('1.5s', style({ opacity: 1 }))
+      ])
+    ])
+  ])
 ])
