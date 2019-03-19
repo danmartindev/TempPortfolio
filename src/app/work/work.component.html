@@ -1,7 +1,7 @@
-<div id="work-wrapper">
+<div id="work-wrapper" >
   <h2>Professional Experience</h2>
   <mat-divider></mat-divider>
-  <section id="experience-sec"> 
+  <section id="experience-sec" [@listAnimation]="workTiles.length"> 
     <div class="tile" *ngFor="let wTile of workTiles">
       <img class="tile-img"src="{{wTile.image}}">
       <div class="tile-content">
@@ -30,7 +30,7 @@
       </div>
     </div>
   </section>
-  <!--<h2>Projects</h2>
+  <h2>Projects</h2>
   <mat-divider></mat-divider>
    <section id="project-sec"> 
       <div class="tile" *ngFor="let pTile of projTiles">
@@ -46,7 +46,17 @@
                   {{chip}}
             </mat-chip>
           </mat-chip-list>
+          
+          <a *ngIf=pTile.link
+          mat-flat-button color="primary" 
+          href = "{{pTile.link}}" 
+          target = _blank
+          class="workLink"
+          >
+          {{pTile.linkText}}
+        </a>
+
         </div>
       </div>
-  </section> -->
+  </section>
 </div>
