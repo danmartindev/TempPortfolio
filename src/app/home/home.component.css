@@ -40,19 +40,17 @@ a{
 }
 
 @media screen and (max-width: 900px){
+    #homewrap{
+        width: 90%;
+        padding: 100px 10px 20px 10px;
+    }
+
     .list-wrap{
         width: 100%;
         padding: 0px 10px 10px 10px;
     }
 
-    #welcome{
+    #welcome-sec{
         font-size: 25px;
-    }
-}
-
-@media screen and (max-width: 900px){    
-    #homewrap{
-        width: 90%;
-        padding: 100px 10px 20px 10px;
     }
 }
