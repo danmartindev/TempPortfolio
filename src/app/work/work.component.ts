@@ -6,6 +6,8 @@ export interface workTile {
   subTitle: string;
   link?: string;
   linkText?: string;
+  link2?: string;
+  linkText2?: string;
   chips: String[];
   image?: string;
   text: string;
@@ -38,6 +40,7 @@ export class WorkComponent implements OnInit {
       chips: ['iOS', 'XCode', 'Mobile'],
       text: `This co-op had me working as an iOS developer on an NIH Grant project between RIT and the University of Rochester. 
             The goal of the project was to detect atrial fibrillation, irregular heart rhythms, through a video feed. 
+            <br>
             I worked as the iOS developer on a team including myself, a data analyst, and an android developer. 
             The end product of my time at this position was an app that on the front-end had a number of built in browser “apps” that 
             the user could browse, while in the background, videos were periodically recorded through the front facing camera. 
@@ -53,13 +56,20 @@ export class WorkComponent implements OnInit {
   ];
 
   projTiles: workTile[] = [
-    {title: "Social Media Stopwatch", subTitle:"Chrome Exstension", link: "https://github.com/danmartindev/SocialStopwatch", linkText: "The code",
+    {title: "Social Media Stopwatch", subTitle:"Chrome Exstension", link: "https://github.com/danmartindev/SocialStopwatch", linkText: "The code", 
+    link2: "https://chrome.google.com/webstore/detail/social-media-stopwatch/fahoaamoeaejjidplpjhgmaggphgnaig", linkText2: "Try it!",
     chips: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Chrome APIs'], image:"../assets/soc_stop128.png",
-      text: `This is a Google Chrome extension that I developed for a friend. It utilizes the Chrome alarms and tabs 
-      APIs to set timers(alarms) based on your open tabs, to help you better manage your time usage of social 
-      media and other distracting sites. Timers are currently set manually with the user choosing the tab by URL 
-      and setting the how long they want to have on the site, while future builds will have a setting to have them 
-      automatically created based on the url of the tab. You can check out the current build with the link below.`
+      text: `This is a Google Chrome extension that I developed for a friend. It utilizes the Chrome alarms, 
+      tabs, and local storage APIs to set timers(alarms) based on your open tabs, to help you better manage your 
+      time usage of social media and other distracting sites. 
+      <br>
+      <br>
+      Timers can be set manually with the user choosing the tab by URL and setting the how long they want to
+       spend on the site. Timers can also be set automatically based on the URL. These URLs can be set by the 
+      user in the options page.
+      <br>
+      <br>
+      You can check out the code or download it to try for yourself in the links down below.`
     },
   ];
 
