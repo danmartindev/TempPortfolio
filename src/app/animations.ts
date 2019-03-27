@@ -38,7 +38,7 @@ export let hoverSlide =  trigger('hoverSlide', [
 
 export let fadeIn =  trigger('fadeIn', [
   transition('void => *', [
-    style({ transform: 'translateY(-3px)', opacity: 0}),
+    style({ opacity: 0}),
     animate('600ms ease-in')
   ]),
 ])
