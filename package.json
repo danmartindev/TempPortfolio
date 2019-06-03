@@ -24,8 +24,10 @@
     "@angular/router": "^6.0.2",
     "adm-zip": "^0.4.13",
     "core-js": "^2.5.4",
+    "fstream": "^1.0.12",
     "material-design-icons": "^3.0.1",
     "rxjs": "^6.0.0",
+    "tar": "^2.2.2",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
